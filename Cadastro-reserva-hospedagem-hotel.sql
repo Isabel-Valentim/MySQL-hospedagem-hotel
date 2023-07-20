@@ -65,6 +65,8 @@ CREATE TABLE HOSPEDAGEM (
     CPF_CCG_HOSPEDES BIGINT,
     foreign key(ID_ITENS_CONSUMO) references ITENS_CONSUMO(ID_ITENS_CONSUMO),
     foreign key(CPF_CCG_HOSPEDES) references HOSPEDES(CPF_CCG_HOSPEDES));
+
+-- POPULAÇÃO
  
 INSERT INTO PESSOAS (CPF_CCG_PESSOAS, NOME_PESSOAS, TELEFONE_PESSOAS)
 VALUES
@@ -79,7 +81,6 @@ VALUES
     (90123456789, 'Rafael Souza', 109876543),
     (91234567890, 'Mariana Gomes', 198765432);
     
--- POPULAÇÃO
 
 INSERT INTO HOSPEDES (CPF_CCG_HOSPEDES, RG_HOSPEDES, NOME_HOSPEDES, TELEFONE_HOSPEDES, EMAIL_HOSPEDES)
 VALUES
@@ -164,15 +165,6 @@ VALUES
     (9, '2023-09-20', '2023-09-25', 'Confirmada', 90123456789, 4),
     (10, '2023-10-10', '2023-10-15', 'Cancelada', 91234567890, 5);
 
-
-/*
-Em vez de 10 consultas SQL cada grupo deverá fazer 5 consultas SQL com as tabelas do trabalho sendo:
-1 SELECT com uma operação de Projeção;
-1 SELECT com uma operação de Seleção;
-1 SELECT com uma operação de União;
-1 SELECT com uma operação de Diferença (NOT IN);
-1 SELECT com uma operação de JUNÇÃO INNER.
-*/
 
 -- VISUALIZAR CPF, NOME E TELEFONE DOS HOSPEDES
 SELECT CPF_CCG_HOSPEDES, NOME_HOSPEDES, TELEFONE_HOSPEDES FROM HOSPEDES;
