@@ -1,7 +1,7 @@
 # MySQL-hospedagem-hotel
 
 ## Descrição do projeto
-O objetivo principal desse repositório é fornecer uma estrutura de banco de dados bem organizada para armazenar informações sobre as reservas de quartos e o histórico de hospedagem dos clientes de um hotel. 
+O objetivo principal deste repositório é fornecer uma estrutura de banco de dados bem organizada para armazenar informações sobre as reservas de quartos e o histórico de hospedagem dos clientes de um hotel. 
 
 ## Etapas
 
